@@ -1,0 +1,89 @@
+body
+{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: sans-serif;
+	letter-spacing: 0.1em;
+}
+.footer
+{
+	background-color: #ffddcc;
+	width: 100%;
+	margin-top: 50vh;
+	text-align: center;
+}
+.heading
+{
+	margin-top: 5vh;
+	font-size: 2VW;
+	padding: 0.5em;
+	padding-top: 0;
+	padding-bottom: 0.1em;
+}
+.line,.line1
+{
+	width: 5vw;
+	height: 0.1vh;
+	background-color:  #ff7733;
+	margin-left: 7.8vw;
+	margin-bottom: 3vh;
+	padding-bottom: 0;
+	margin-top: 1vh;
+}
+.line1
+{
+	margin-left: 47vw;
+}
+.copy, .copy1
+{
+	font-size: 1vw;
+	padding-bottom: 0.6em;
+}
+.copy
+{
+	margin-top: 7vh;
+}
+.copy1
+{
+	margin-bottom: 3vh;
+}
+.icondiv
+{
+	margin-bottom: 4vh;
+	margin-top: 4vh;
+}
+div
+{
+	font-size: 1.3vw;
+	padding-bottom: 1em;
+}
+.fa, .paypal
+{
+	font-size: 2.5vw;
+	border:1px solid #ff7733;
+	padding: 1em;
+	margin-left: 6vw;
+	margin-right: 6vw;
+}
+#a,#c
+{
+	font-size: 1.7vw;
+}
+#b,#d
+{
+	font-size: 1.5vw;
+}
+.borderless i
+{
+	padding: 1.5em;
+	border: none;
+	font-size:2.5vw;
+	margin: 0;
+}
+.borderless
+{
+	padding-bottom: 5vh;
+}

@@ -1,0 +1,81 @@
+/*login/register*/
+.msg
+{
+	height: 4.5vh;
+    width: 67vw;
+    font-family: serif;
+    font-size: 2vw;
+    margin-top: 25vh;
+    margin-left: 16.5vw;
+}
+#msg
+{
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.formdiv
+{
+	background-color: #444;
+	height: 56vh;
+	margin-top: 4vh;
+}
+.form
+{
+	margin-top: 2vh;
+	text-align: center;
+}
+.signdiv
+{
+	font-size: 3vw;
+}
+.inputdiv
+{
+	margin-top: 4vh;
+}
+.input
+{
+	background-color: #fff;
+	color: #003366;
+	padding: 0.5vw;
+	border-radius: 0.5vw;
+	display: block;
+	margin-top: 2vh;
+	width: 30vw;
+	border:0;
+	outline: 0;
+	box-shadow: 0px 1px 1px;
+	text-align: center;
+	margin-left: 1.5vw;
+	font-size: 1.2vw;
+}
+input:focus
+{
+	box-shadow: 0px 4px 8px rgba(0,0,0,0.9);
+}
+#register,#login
+{
+	width: 10vw;
+	margin-left: 12vw;
+	border-radius: 1vw;
+	cursor: pointer;
+}
+#login:hover
+{
+	box-shadow: 0px 4px 8px rgba(250,250,250,0.5);
+}
+#register:hover
+{
+	box-shadow: 0px 4px 8px rgba(250,250,250,0.5);
+}
+#DoB
+{
+	text-indent: 2vw;
+}
+.line
+{
+	height: 60vh;
+	width: 0.2vw;
+	background-color: rgba(210,210,210,1);
+	transform: rotate(160deg);
+	margin-top: -2vh;
+}

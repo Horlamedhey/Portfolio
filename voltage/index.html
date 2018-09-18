@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>voltage</title>
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div class="notif">
+        <h1>Sorry, this page is not supported by your device and therefore cannot be viewed.</h1>
+        <h2>Pease use a device with a wider screen to view the content of this page.</h2>
+    </div>
+    <div class="cover">
+        <h1 class="heading">Pricing Plans</h1>
+        <h2 class="small">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </h2>
+        <div class="content">
+            <div class="maincontent firstdiv">
+                <div class="down2 head">BASIC</div>
+                <div class="down1 desc">Little description here</div>
+                <div class="special"><sup>$</sup>19<span class="specialspan">/month</span></div>
+                <div class="down2">10 presentations/month</div>
+                <div class="down1-5">Support at $25/hour</div>
+                <div class="down1-5">1 campaign/month</div>
+                <button class="down8" id="btn1">CHOOSE PLAN</button>
+            </div>
+            <div class="maincontent specialdiv">
+                <div class="down3 head">STANDARD</div>
+                <div class="down1 desc">Little description here</div>
+                <div class="special"><sup>$</sup>29<span class="specialspan">/month</span></div>
+                <div class="down2">50 presentations/month</div>
+                <div class="down1-5">5 hours of free support</div>
+                <div class="down1-5">10 campaigns/month</div>
+                <button class="specialbut down10" id="btn2">CHOOSE PLAN</button>
+            </div>
+            <div class="maincontent lastdiv">
+                <div class="down2 head">ENTERPRISE</div>
+                <div class="down1 desc">Little description here</div>
+                <div class="special"><sup>$</sup>79<span class="specialspan">/month</span></div>
+                <div class="down2">Unlimited presentations</div>
+                <div class="down1-5">Unlimited support</div>
+                <div class="down1-5">Unlimited campaigns</div>
+                <button class="down8" id="btn3">CHOOSE PLAN</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+$('document').ready(function () {
+	$('#btn1').click(function(){
+		$('#btn2').removeClass('specialbut');
+		$('#btn3').removeClass('specialbut');
+		$(this).addClass('specialbut');
+	})
+	$('#btn2').click(function(){
+		$('#btn1').removeClass('specialbut');
+		$('#btn3').removeClass('specialbut');
+		$(this).addClass('specialbut');
+	})
+	$('#btn3').click(function(){
+		$('#btn1').removeClass('specialbut');
+		$('#btn2').removeClass('specialbut');
+		$(this).addClass('specialbut');
+	})
+});
+</script>
+</html>

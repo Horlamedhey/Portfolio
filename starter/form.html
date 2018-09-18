@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up/Log in</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="nav-div">
+		<nav>
+			<a href="home.html" class="ahover">HOME</a>
+			<a href="about.html" class="ahover">ABOUT</a>
+			<a href="contact us.html" class="ahover">CONTACT US</a>
+			<a href="help.html" class="ahover">HELP</a>
+			<a href="form.html" class="ahover">Register/Log in</a>
+		</nav>
+	</div>
+	<div class="col-12 martop1-6 formdiv">
+		<div class="col-4 off-1 align-center float">
+			<form method="post" action="">
+				<div class="martop"><span class="biggerheading txtcol">Sign up</span></div>
+					<div class="martop">
+						<div class="minmartop2">
+							<input type="text" name="name" placeholder="input your name here" class="sample" autocomplete="on" size="40" required="" maxlength="30" pattern="[A-Z, a-z]{1,30}">
+						</div>
+						<div class="minmartop2">
+							<input type="date" name="DoB" placeholder="dd/mm/yy" size="40" required=""
+							maxlength="11" max="01/01/1975" min="31/12/2000">
+						</div>
+						<div class="minmartop2">
+							<input type="text" name="username" placeholder="username" autocomplete="on" size="40" required=""
+							maxlength="30">
+						</div>
+						<div class="minmartop2">
+							<input type="password" name="password" placeholder="input password" autocomplete="off" size="40" required=""
+							maxlength="30">
+						</div>
+						<div class="minmartop2">
+							<input type="password" name="re-password" placeholder="confirm password" autocomplete="off" size="40" required=""
+							maxlength="30">
+						</div>
+						<div class="minmartop7">
+							<input type="submit" name="submit" value="submit">
+						</div>
+					</div>
+			</form>
+		</div>
+		<div class="line float off-1"></div>
+		<div class="col-4 off-1 align-center float">
+			<form method="post" action="">
+				<div class="martop"><span class="biggerheading txtcol">Log in</span></div>
+					<div class="martop">
+						<div class="minmartop2">
+							<input type="text" name="username" placeholder="input username" autocomplete="on" size="40" required=""
+							maxlength="30">
+						</div>
+						<div class="minmartop2">
+							<input type="password" name="password" placeholder="input password" autocomplete="off" size="40" required=""
+							maxlength="30">
+						</div>
+						<div class="minmartop7">
+							<input type="submit" name="submit" value="submit">
+						</div>
+					</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

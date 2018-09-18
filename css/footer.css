@@ -1,0 +1,59 @@
+
+	footer{
+	margin: 0!important;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	z-index: 1;
+	}
+	a{
+		color: unset;
+	}
+	.foot{
+		margin-top: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.foot h2, .subsubfoot{
+		text-align: center;
+	}
+	.copydiv{
+		text-align: center;
+		margin: 0 auto;
+		padding-top: 50px;
+		margin-top: 50px;
+	}
+	.copydiv div{
+		margin-bottom: 10px;
+	}
+	.prod{
+		text-align: center;
+		margin-top: -10px;
+	}
+	.var{
+		color: #334!important;
+		font-size: 24px;
+		text-decoration: underline;
+	}
+	#face, #git, #pen, #tweet, #up{
+		font-size: 22px;
+		border: 2px #888 solid;
+		border-radius: 50%;
+		padding: 15px;
+		margin-right: 5px;
+		margin-left: 5px;
+		transition: 0.7s;
+	}
+	#face:hover{
+		background:#444; 
+	}
+	#git:hover{
+		background:#444; 
+	}
+	#pen:hover{
+		background:#444; 
+	}
+	#tweet:hover{
+		background:#444; 
+	}

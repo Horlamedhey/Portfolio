@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, height=device-height initial-scale=1.0, user-scalable=yes">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body id="body">
+    <header id="head">
+        <button id="navtoggle"> <i class="fa fa-bars" id="toggleicon"></i></button>
+        <div class="absolute loc leftm">
+            <i class="fa fa-home" id="toggleicon"> </i><span> Home </span>
+        </div>
+        <div id="mynav">
+            <div class="logodiv"><a href="http://electrified.com.ng"><img src="images/logo.jpg" alt="brand icon" width="80px" class="logo"></a></div>
+            <ul id="navlinkdiv" onmouseenter="color()" onmouseleave="colorout()">
+                <li class="active"><a href="" class="fa fa-home navlink" id="a"> HOME</a></li>
+                <li><a href="#port" class="fa fa-database navlink"> PORTFOLIO</a></li>
+                <li><a href="#cont" class="fa fa-address-book-o navlink" id="contact"> CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="intro">
+            <div class="cover">
+                <div class="div1" style="margin-top: 20px;">
+                    <img src="images/11.jpg" class="abtimg">
+                    <div class="name">
+                        Ajao Gafar Olamide (VARIABLE)
+                    </div>
+                </div>
+                <div class="abt">
+                    Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy, and creative direction; devoted to functional programming and information architecture.
+                    <div class="skill" style="margin-top: 20px; font-family: agency fb;">
+                        Web Developer - User Experience Designer - Graphic Artist
+                    </div>
+                    <div class="skilldiv">
+                        <h1>Skills</h1>
+                        <ul class="skills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                            <li>PHP</li>
+                            <li>JQUERY</li>
+                            <li>REACT</li>
+                            <li>NODE</li>
+                            <li>JAVA</li>
+                            <li>C++</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portdiv">
+            <span id="port"></span>
+            <h1>PORTFOLIO</h1>
+            <p class="thumbtext">I've built and contributed to several projects... Take a quick tour through the thumbnails below;</p>
+            <div class="thumbnails">
+                <div class="info" id="info">
+                    <h2>PAUL-VALENTINE</h2>
+                    <img src="images/1-1.jpg">
+                </div>
+                <div class="info" id="info1">
+                    <h2>VOLTAGE</h2>
+                    <img src="images/volt.jpg">
+                </div>
+                <div class="info" id="info2">
+                    <h2>ELECTRIFIED</h2>
+                    <img src="images/30.jpeg">
+                </div>
+                <div class="info" id="info7">
+                    <h2>ELECTRIFIED-MOBILE</h2>
+                    <img src="images/30.jpeg">
+                </div>
+                <div class="info" id="info5">
+                    <h2>SPICCY</h2>
+                    <img src="images/spiccy.jpg">
+                </div>
+                <div class="info" id="info4">
+                    <h2>STARTER</h2>
+                    <img src="images/14.jpg">
+                </div>
+                <div class="info" id="info10">
+                    <h2>STEP</h2>
+                    <img src="images/21.jpg">
+                </div>
+                <div class="info" id="info11">
+                    <h2>PAYSLIP</h2>
+                    <img src="images/22.jpg">
+                </div>
+                <div class="info" id="info12">
+                    <h2>NOTEMASTER</h2>
+                    <img src="images/note.jpg">
+                </div>
+                <div class="modal">
+                    <div id="modal">
+                        <button class="close" id="close"><i class="fa fa-close"></i></button>
+                        <div class="information" id="information">
+                            <h2>PAUL-VALENTINE</h2>
+                            <div class="modiv"><img src="images/1-1.jpg"></div>
+                        <div class="link"><a href="paul-valentine/index.html" id="go" target="_blank"><button class="go">GO <i class="fa fa-arrow-right"></i></button></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="contactdiv">
+            <span id="cont"></span>
+            <h1>CONTACT</h1>
+            <div class="formdiv">
+                <form method="POST" action="" name="form">
+                    <div class="form-group">
+                        <input type="text" name="name" required="" placeholder="Name" id="name" autocomplete="">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" required="" placeholder="E-mail" autocomplete="">
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" name="message" required="" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" name="submit" id="submit" class="animated fadeIn" disabled>Submit</button>
+                    <button type="button" id="valid" onclick="validate()">Validate</button>
+                </form>
+                <div class="note">
+                    Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.
+                    <div class="note1">
+                        I promise to reply A.S.A.P.
+                    </div>
+                    <div class="note2">
+                        Note: No spam/soliciting pour moi, merci :)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="subfoot">
+                <h2>ABOUT THIS PAGE</h2>
+                <br>
+                <h3 class="prod">
+                    Made by <a href="http://electrified.com.ng" ><span class="var">Variable</span>.</a>
+                </h3>
+            </div>
+            <div class="subfoot1">
+                <h2>AROUND THE WEB</h2>
+                <div class="subsubfoot">
+                    <a href="https://facebook.com/gaphar.horla1"><i class="fa fa-facebook" id="face"></i></a>
+                    <a href="https://github.com/Horlamedhey"><i class="fa fa-github" id="git"></i></a>
+                    <a href="https://codepen.io/HTCS"><i class="fa fa-codepen" id="pen"></i></a>
+                    <a href="https://twitter.com/horlasco34"><i class="fa fa-twitter" id="tweet"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copydiv">
+            <div>
+                Privacy Policy | Terms & Conditions
+            </div>
+            Copyright &copy 2017
+        </div>
+    </footer>
+    <div id="up"><a href="#body"><i class="fa fa-chevron-up"></i></a></div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.min.js"></script>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Notemaster</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Notemaster">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="polyfill.js"></script>
+    <script src="vue.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="noteMaster.css">
+</head>
+
+<body>
+    <div id="app">
+        <h3>
+    		{{ title }}
+    	</h3>
+        <div class="form">
+            <div class="form-group">
+                <div class="form-group">
+                    <label>Note Title</label>
+                    <input class="form-control" type="text" v-model='note.title'>
+                </div>
+                <div class="form-group">
+                    <label>Note text</label>
+                    <textarea class="form-control" type="text" v-model='note.text'></textarea>
+                </div>
+                <button class="btn btn-primary" @click='addNote'>Submit</button>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="col-sm-4 note" v-for='(note,index) in notes'>
+                <div class="card">
+                	<button class="close" @click='removeNote(index)'>&times;</button>
+                    <div class="card-block">
+                    	<h4 class="card-title">{{note.title}}</h4>
+                    	<h6 class="card-subtitle">{{note.date}}</h6>
+                    	<p class="card-text mb-2 text-muted">{{note.text}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

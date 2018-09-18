@@ -1,0 +1,460 @@
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.nav {
+    z-index: 999;
+    height: auto;
+    font-family: serif;
+}
+
+.navdiv {
+    background-color: rgba(0, 0, 0, 0.038);
+    box-shadow: inset 1px 1px 20px rgba(0, 0, 0, 0.2), inset -1px -1px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    max-width: 100%;
+    min-height: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    page-break-inside: avoid;
+}
+
+#navlist {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+#navlist li {
+    font-style: italic;
+    font-size: 14px;
+    padding: 30px 23px 30px 23px;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.selected1:link {
+    background-color: #b3ffda;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.2), inset -1px -1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.selected1:active {
+    box-shadow: 1px 1px 15px rgba(0, 204, 105, 0.2), -1px -1px 15px rgba(0, 204, 105, 0.2);
+}
+
+.selected:hover {
+    background-color: unset;
+}
+
+#navtoggle {
+    display: none;
+}
+
+main {
+    position: relative;
+    top: 50px;
+}
+
+.welcome {
+    text-align: center;
+    line-height: auto;
+    font-family: sans-serif;
+}
+
+.welcome-dishes {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #66ffb5;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.1), inset -1px -1px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+    animation-name: colorx;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes colorx {
+    0% {
+        background: #66ffb5;
+    }
+    10% {
+        background: #33ff9c;
+    }
+    20% {
+        background: #00ff84;
+    }
+    30% {
+        background: #00cc69;
+    }
+    40% {
+        background: #00994f;
+    }
+    50% {
+        background: #00cc69;
+    }
+    60% {
+        background: #00ff84;
+    }
+    70% {
+        background: #33ff9c;
+    }
+    80% {
+        background: #66ffb5;
+    }
+    90% {
+        background: #66ffb5;
+    }
+    100% {
+        background: #66ffb5;
+    }
+}
+
+article {
+    padding: 0px 100px 0px 100px;
+    margin: auto;
+    font-size: 22px;
+    letter-spacing: 0.7px;
+    word-spacing: 0.5px;
+    font-family: sans-serif;
+}
+
+.section1 {
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 70px;
+    background: rgba(102, 255, 181, 0.3);
+}
+
+.img-div {
+    margin-right: 5%;
+    padding: 15px 3% 5px 3%;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.7s linear;
+    -moz-transition: all 0.7s linear;
+    -ms-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+    transition: all 0.7s linear;
+}
+
+.stake img {
+    max-width: 100%;
+    min-width: 50%;
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+
+.img-div:hover {
+    background: #00cc69;
+}
+
+figcaption {
+    font-weight: 600;
+    text-align: center;
+}
+
+.section2 h1 {
+    text-decoration: underline;
+    font-weight: bolder;
+    margin-top: 30px;
+    color: #00b35c;
+}
+
+address {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding: 5px;
+    box-shadow: inset 0px -1px 2px rgba(0, 179, 92, 0.25)/* inset 0px 1px 3px rgba(0, 179, 92, 0.25)*/
+    ;
+}
+
+h3 {
+    font-family: sans-serif;
+    text-decoration: underline;
+    margin-top: 20px;
+    font-weight: 800;
+    color: #00b35c;
+}
+
+.stake {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 40px 5% 50px 5%;
+    margin-top: 50px;
+    margin-left: 5%;
+}
+
+.section1 h2 {
+    font-weight: 700;
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: underline;
+    position: relative;
+    top: 40px;
+    color: #00b35c;
+}
+
+.address {
+    margin-top: 10px;
+}
+
+.section2 {
+    padding: 0px 10px 0px 10px;
+    margin-top: 80px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    margin-top: 200px;
+    background: #00cc69;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 30px!important;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+address i {
+    color: #00b35c;
+}
+
+#a,
+#b,
+#c,
+#d {
+    background: #66ffb5;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    box-shadow: 2px 2px 10px rgba(51, 255, 51, 1), -2px -2px 10px rgba(51, 255, 51, 1);
+}
+
+.div1 {
+    width: 100%;
+    font-weight: 550;
+}
+
+.div1 div {
+    padding-bottom: 10px;
+}
+
+.div2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+li {
+    list-style-type: none;
+}
+
+#arrow,
+#arrow1,
+#arrow2 {
+    display: none;
+}
+#slider{
+    max-width: 100%;
+    height: auto;
+    margin:0 auto;
+    display: block;
+    box-shadow: 1px 1px 5px #00994f, -1px -1px 5px #00994f;
+}
+.mobile{
+    display: none;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    #navtoggle {
+        font-size: 50px;
+        display: inline-block;
+        background: transparent;
+        border: none;
+        font-style: italic;
+        font-family: cursive;
+        font-size: 1.5rem;
+        position: absolute;
+        right: 0;
+        margin-top: 5px;
+        top:205px;
+    }
+    #navtoggle:focus{
+        outline: none;
+    }
+    .navdiv .span{
+        display: inline-block;
+        margin-top: 10px;
+    }
+    article {
+        padding: 0px 20px 0px 20px!important;
+    }
+    #toggleicon {
+        font-size: 1.36rem;
+        padding: 5px!important;
+        cursor: pointer;
+    }
+    header {
+        flex-wrap: wrap;
+    }
+
+    .nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .navdiv {
+        background-color: #b3ffda;
+        padding: 0px 5px 12px 5px;
+    }
+    .logo {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        page-break-inside: avoid;
+        margin: 0 auto;
+    }
+
+    #navlist {
+        display: none;
+        margin-top: 0;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    #navlist li {
+    }
+        padding: 20px 0px 20px 0px;
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        border-bottom: 1px solid rgba(0, 179, 60, 0.5);
+    }
+@-webkit-keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+      }
+    
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+      }
+    
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
+    
+    .fadeInDown {
+      -webkit-animation-name: fadeInDown;
+      animation-name: fadeInDown;
+    -webkit-animation-duration: 0.7s;
+       animation-duration: 0.7s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    li a {
+        color: unset;
+        padding: 30px 300px 30px 300px;
+    }
+    li .selected1:link {
+        background-color: unset;
+        box-shadow: unset;
+    }
+    .active {
+        background-color: #b3ffda;
+        box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.2), inset -1px -1px 10px rgba(0, 0, 0, 0.2);
+    }
+    .mobilelocation button {
+        display: block!important;
+        width: 100%;
+        height: 30px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .mobilelocation button h1 {
+        display: inline-block!important;
+        margin-top: 0;
+        text-decoration: none;
+    }
+    .mobilelocation button h3 {
+        display: inline-block!important;
+        margin-top: 0;
+        text-decoration: none;
+    }
+    #arrow,
+    #arrow1,
+    #arrow2,
+    #arrow3,
+    #arrow4,
+    #arrow5 {
+        display: inline-block;
+        position: absolute;
+        right: 25px;
+        line-height: 25px;
+        font-weight: 900;
+        color: #00994f;
+    }
+    #countries,
+    #countries1,
+    #countries2,
+    #countries3,
+    #countries4,
+    {
+        display: none;
+    }
+    #locs {
+        display: none;
+    }
+}
